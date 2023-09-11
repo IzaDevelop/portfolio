@@ -9,11 +9,11 @@ export default function Footer() {
                         <figure
                             className="inline-flex items-center"
                         >
-                            <img src={Logo} alt="Logo" className="max-w-[80px] dark:invert"/>
+                            <img src={Logo} alt="Logo" className="max-w-[50px] dark:invert" />
                         </figure>
                         <div className="lg:max-w-sm">
                             <p className="text-sm">
-                                Desenvolvedora Web, construindo o Front-end de sites e aplicativos Web.
+                                Desenvolvedora, construindo o Front-end de sites e aplicativos Web.
                             </p>
                         </div>
                     </div>
@@ -21,7 +21,7 @@ export default function Footer() {
                         <p className="text-base font-bold tracking-wide">
                             Contatos
                         </p>
-                        <div className="flex">
+                        {/* <div className="flex">
                             <p className="mr-1">Telefone:</p>
                             <a
                                 href="tel:+55 11 97451-8906"
@@ -31,7 +31,7 @@ export default function Footer() {
                             >
                                 +55 11 97451-8906
                             </a>
-                        </div>
+                        </div> */}
                         <div className="flex">
                             <p className="mr-1">E-mail:</p>
                             <a
@@ -50,29 +50,25 @@ export default function Footer() {
                         </span>
                         <div className="flex items-center mt-1 space-x-3">
                             <a
-                                href="/"
+                                href="https://github.com/IzaDevelop"
                                 className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                title="Github"
                             >
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                                    <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000000" viewBox="0 0 256 256"><path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path></svg>
                             </a>
                             <a
-                                href="/"
+                                href="https://www.linkedin.com/in/izabelle-santos-128703224/"
                                 className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                title="Linkedin"
                             >
-                                <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
-                                    <circle cx="15" cy="15" r="4" />
-                                    <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000000" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg>
                             </a>
                             <a
-                                href="/"
+                                href="https://instagram.com/izadevelop?igshid=OGQ5ZDc2ODk2ZA=="
                                 className="transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                title="Instagram"
                             >
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                                    <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
                             </a>
                         </div>
                     </div>

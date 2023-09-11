@@ -1,5 +1,6 @@
 import Layout from '../../components/layout'
 import Item from '../../components/item'
+import { DreamAgency, ProximaJornada } from '../../assets'
 
 export default function Home() {
     return (
@@ -162,16 +163,21 @@ export default function Home() {
                             </div>
                             <div className="space-y-4">
                                 <Item title="Faculdade">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                                    Sistemas para Internet - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
+                                    <br />
+                                    <span className='text-sm'>2022 - até o momento</span>
                                 </Item>
                                 <Item title="Cursos">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                                    Programador Web - Senac (2022)
+                                    <br />
+                                    Técnico em Contabilidade - Etec Professor Camargo Aranha (2021)
+                                    <br />
+                                    Técnico em Edificações - Etec de São Paulo (2021)
                                 </Item>
                                 <Item title="Certificações">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                                    Qualificação profissional em Domain Driven Design (Java), Cloud Computing - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
+                                    <br/>
+                                    Qualificação profissional em Responsive Web - Front End e User Experience - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
                                 </Item>
                             </div>
                         </div>
@@ -185,86 +191,86 @@ export default function Home() {
                                 Projetos
                             </h2>
                         </div>
-                        <div className='mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8'>
-                        <div className="h-auto rounded-lg bg-purple-300 text-neutral-950">
-                            <a href="https://dream-agency-beta.vercel.app" target='_blank' aria-label="Article">
-                                <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                    <img
-                                        src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                                        className="object-cover w-full h-64 rounded"
-                                        alt=""
-                                    />
-                                    <div className="pt-5 px-4">
-                                        <p className="text-2xl font-bold leading-5 pb-2">
-                                            Dream Agency
-                                        </p>
-                                        <p className="mb-4">
-                                            Landing page para uma agência fictícia, que oferece planos de serviços digitais.
-                                        </p>
+                        <div className='mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8'>
+                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <a href="https://dream-agency-beta.vercel.app" target='_blank' aria-label="Article">
+                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
+                                        <img
+                                            src={DreamAgency}
+                                            className="object-cover w-full h-64"
+                                            alt=""
+                                        />
+                                        <div className="pt-5 px-4">
+                                            <p className="text-2xl font-bold leading-5 pb-2">
+                                                Dream Agency
+                                            </p>
+                                            <p className="mb-4">
+                                                Landing page para uma agência fictícia, que oferece planos de serviços digitais para outras empresas.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
 
-                        <div className="h-auto rounded-lg  bg-purple-300 text-neutral-950 lg:col-span-2">
-                            <a href="https://proxima-jornada-beta.vercel.app" target='_blank' aria-label="Article">
-                                <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                    <img
-                                        src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                                        className="object-cover w-full h-64 rounded"
-                                        alt=""
-                                    />
-                                    <div className="pt-5 px-4">
-                                        <p className="text-2xl font-bold leading-5 pb-2">
-                                            Próxima Jornada
-                                        </p>
-                                        <p className="mb-4">
-                                            Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.
-                                        </p>
+                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <a href="https://proxima-jornada-beta.vercel.app" target='_blank' aria-label="Article">
+                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
+                                        <img
+                                            src={ProximaJornada}
+                                            className="object-cover w-full h-64"
+                                            alt=""
+                                        />
+                                        <div className="pt-5 px-4">
+                                            <p className="text-2xl font-bold leading-5 pb-2">
+                                                Próxima Jornada
+                                            </p>
+                                            <p className="mb-4">
+                                                Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
 
-                        <div className="h-auto rounded-lg  bg-purple-300 text-neutral-950 lg:col-span-2">
-                            <a href="/" target='_blank' aria-label="Article">
-                                <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                    <img
-                                        src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                                        className="object-cover w-full h-64 rounded"
-                                        alt=""
-                                    />
-                                    <div className="pt-5 px-4">
-                                        <p className="text-2xl font-bold leading-5 pb-2">
-                                            Rockpedia
-                                        </p>
-                                        <p className="mb-4">
-                                            Blog sobre bandas, shows, intrumentos e curiosidades ligadas ao mundo da música.
-                                        </p>
+                            {/* <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <a href="/" target='_blank' aria-label="Article">
+                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
+                                        <img
+                                            src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                            className="object-cover w-full h-64"
+                                            alt=""
+                                        />
+                                        <div className="pt-5 px-4">
+                                            <p className="text-2xl font-bold leading-5 pb-2">
+                                                Rockpedia
+                                            </p>
+                                            <p className="mb-4">
+                                                Blog sobre bandas, shows, intrumentos e curiosidades ligadas ao mundo da música.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
 
-                        <div className="h-auto rounded-lg  bg-purple-300 text-neutral-950">
-                            <a href="/" target='_blank' aria-label="Article">
-                                <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                    <img
-                                        src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                                        className="object-cover w-full h-64 rounded"
-                                        alt=""
-                                    />
-                                    <div className="pt-5 px-4">
-                                        <p className="text-2xl font-bold leading-5 pb-2">
-                                            Lorem Ipsum
-                                        </p>
-                                        <p className="mb-4">
-                                            Lorem ipsum dolor sit amet.
-                                        </p>
+                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <a href="/" target='_blank' aria-label="Article">
+                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
+                                        <img
+                                            src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                            className="object-cover w-full h-64"
+                                            alt=""
+                                        />
+                                        <div className="pt-5 px-4">
+                                            <p className="text-2xl font-bold leading-5 pb-2">
+                                                Lorem Ipsum
+                                            </p>
+                                            <p className="mb-4">
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div> */}
                         </div>
                     </div>
                 </section>
