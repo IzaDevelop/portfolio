@@ -51,6 +51,7 @@ export default function Footer() {
                         <div className="flex items-center mt-1 space-x-3">
                             <a
                                 href="https://github.com/IzaDevelop"
+                                target='_blank'
                                 className="transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 title="Github"
                             >
@@ -58,6 +59,7 @@ export default function Footer() {
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/izabelle-santos-128703224/"
+                                target='_blank'
                                 className="transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 title="Linkedin"
                             >
@@ -65,6 +67,7 @@ export default function Footer() {
                             </a>
                             <a
                                 href="https://instagram.com/izadevelop?igshid=OGQ5ZDc2ODk2ZA=="
+                                target='_blank'
                                 className="transition-colors duration-300 hover:text-deep-purple-accent-400"
                                 title="Instagram"
                             >

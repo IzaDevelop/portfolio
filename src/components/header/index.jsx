@@ -11,7 +11,7 @@ export default function Header() {
     } = useAppContext();
 
     return (
-        <header className='w-full bg-neutral-100 dark:bg-neutral-950 text-zinc-900 dark:text-zinc-100'>
+        <header className='w-full bg-purple-300 dark:bg-neutral-950 text-zinc-900 dark:text-zinc-100'>
             <nav className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div className="relative flex items-center justify-between">
                     <figure className="flex items-center">
@@ -23,7 +23,7 @@ export default function Header() {
                                 href="#home"
                                 aria-label="Home"
                                 title="Home"
-                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
                                 Home
                             </a>
@@ -33,7 +33,7 @@ export default function Header() {
                                 href="#sobre"
                                 aria-label="Sobre mim"
                                 title="Sobre mim"
-                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
                                 Sobre mim
                             </a>
@@ -43,7 +43,7 @@ export default function Header() {
                                 href="#projetos"
                                 aria-label="Projetos"
                                 title="Projetos"
-                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
                                 Projetos
                             </a>
@@ -53,7 +53,7 @@ export default function Header() {
                                 href="mailto:izabelledevelop@gmail.com"
                                 aria-label="Contato"
                                 title="Contato"
-                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
                                 Contato
                             </a>
@@ -63,7 +63,7 @@ export default function Header() {
                                 <button
                                     type="button"
                                     onClick={handleToggleTheme}
-                                    className="py-2 rounded focus:border-0 dark:hover:text-purple-300"
+                                    className="py-2 rounded focus:border-0 dark:hover:text-purple-700"
                                 >
                                     <Sun size={23} weight="light" />
                                 </button>
@@ -71,7 +71,7 @@ export default function Header() {
                                 <button
                                     type="button"
                                     onClick={handleToggleTheme}
-                                    className="py-2 rounded focus:border-0 hover:text-purple-500"
+                                    className="py-2 rounded focus:border-0 hover:text-purple-700"
                                 >
                                     <Moon size={23} weight="light" />
                                 </button>
@@ -89,7 +89,7 @@ export default function Header() {
                         </button>
                         {menu && (
                             <div className="absolute z-10 top-0 left-0 w-full" onClick={() => setMenu(false)}>
-                                <div className="p-5 bg-neutral-100 dark:bg-neutral-950 border rounded shadow-sm">
+                                <div className="p-5 bg-purple-300 dark:bg-neutral-950 rounded shadow-lg">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <figure className="flex items-center">

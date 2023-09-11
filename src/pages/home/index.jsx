@@ -7,12 +7,11 @@ export default function Home() {
         <Layout>
             <article>
                 <section id='home'>
-                    <div className="relative bg-neutral-100 dark:bg-neutral-950">
+                    <div className="relative bg-purple-300 dark:bg-neutral-950">
                         <div className="absolute inset-x-0 bottom-0">
                             <svg
                                 viewBox="0 0 224 12"
-                                fill="#d8b4fe"
-                                className="w-full -mb-1"
+                                className="w-full -mb-1 fill-neutral-50 dark:fill-neutral-900"
                                 preserveAspectRatio="none"
                             >
                                 <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z" />
