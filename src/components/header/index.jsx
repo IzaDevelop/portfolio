@@ -63,7 +63,7 @@ export default function Header() {
                                 <button
                                     type="button"
                                     onClick={handleToggleTheme}
-                                    className="py-2 rounded focus:border-0 dark:hover:text-purple-700"
+                                    className="py-2 rounded focus:border-0 dark:hover:text-purple-300"
                                 >
                                     <Sun size={23} weight="light" />
                                 </button>

@@ -164,7 +164,7 @@ export default function Home() {
                                 <Item title="Faculdade">
                                     Sistemas para Internet - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
                                     <br />
-                                    <span className='text-sm'>2022 - até o momento</span>
+                                    <span className='text-sm'>Março de 2022 - até o momento</span>
                                 </Item>
                                 <Item title="Cursos">
                                     Programador Web - Senac (2022)
@@ -177,6 +177,11 @@ export default function Home() {
                                     Qualificação profissional em Domain Driven Design (Java), Cloud Computing - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
                                     <br/>
                                     Qualificação profissional em Responsive Web - Front End e User Experience - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
+                                </Item>
+                                <Item title="Experiências">
+                                    Dev. Front-End - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.ateliedepropaganda.com.br" target='_blank'>@Ateliê de Propaganda </a>
+                                    <br/>
+                                    <span className='text-sm'>Julho de 2022 - até o momento</span>
                                 </Item>
                             </div>
                         </div>
