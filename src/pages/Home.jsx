@@ -1,6 +1,6 @@
-import Layout from '../../components/layout'
-import Item from '../../components/item'
-import { DreamAgency, ProximaJornada } from '../../assets'
+import Layout from '../components/layout'
+import Item from '../components/item'
+import { DreamAgency, Memorygame, Minefields, ProximaJornada } from '../assets'
 
 export default function Home() {
     return (
@@ -175,12 +175,12 @@ export default function Home() {
                                 </Item>
                                 <Item title="Certificações">
                                     Qualificação profissional em Domain Driven Design (Java), Cloud Computing - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
-                                    <br/>
+                                    <br />
                                     Qualificação profissional em Responsive Web - Front End e User Experience - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
                                 </Item>
                                 <Item title="Experiências">
                                     Dev. Front-End - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.ateliedepropaganda.com.br" target='_blank'>@Ateliê de Propaganda </a>
-                                    <br/>
+                                    <br />
                                     <span className='text-sm'>Julho de 2022 - até o momento</span>
                                 </Item>
                             </div>
@@ -230,6 +230,46 @@ export default function Home() {
                                             </p>
                                             <p className="mb-4">
                                                 Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <a href="https://game-minefields.vercel.app" target='_blank' aria-label="Article">
+                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
+                                        <img
+                                            src={Minefields}
+                                            className="object-cover w-full h-[303.8px]"
+                                            alt=""
+                                        />
+                                        <div className="pt-5 px-4">
+                                            <p className="text-2xl font-bold leading-5 pb-2">
+                                                Campo Minado - Desktop
+                                            </p>
+                                            <p className="mb-4">
+                                                Um quebra-cabeça clássico que combina lógica, estratégia e um toque de sorte.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <a href="https://memory-pokemon.vercel.app" target='_blank' aria-label="Article">
+                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
+                                        <img
+                                            src={Memorygame}
+                                            className="object-cover w-full h-[303.8px]"
+                                            alt=""
+                                        />
+                                        <div className="pt-5 px-4">
+                                            <p className="text-2xl font-bold leading-5 pb-2">
+                                                Jogo da Memória Pokemon - Desktop
+                                            </p>
+                                            <p className="mb-4">
+                                                Um jogo de tabuleiro que desafia a memória e a concentração dos jogadores.
                                             </p>
                                         </div>
                                     </div>
