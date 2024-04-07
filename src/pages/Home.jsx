@@ -164,7 +164,7 @@ export default function Home() {
                                 <Item title="Faculdade">
                                     Sistemas para Internet - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
                                     <br />
-                                    <span className='text-sm'>Março de 2022 - Dexembro de 2024</span>
+                                    <span className='text-sm'>Março de 2022 - Dezembro de 2024</span>
                                 </Item>
                                 <Item title="Cursos">
                                     Programador Web - Senac (2022)
