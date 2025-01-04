@@ -20,7 +20,7 @@ export default function Home() {
                         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                             <div className="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
                                 <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
-                                    Bem-vindo(a) ao meu portfolio digital como desenvolvedora front-end
+                                    Bem-vindo(a) ao meu portfólio digital como desenvolvedora front-end
                                 </h2>
                                 <p className="mb-6 text-base md:text-lg">
                                     Dentro dessas paredes virtuais, convido você a explorar minha criatividade, dedicação e conhecimento técnico no mundo do desenvolvimento web.
@@ -53,7 +53,7 @@ export default function Home() {
                                     Quem sou
                                 </h5>
                                 <p>
-                                    Olá! Meu nome é Izabelle, sou programadora apaixonada por Front-end. Com 1 ano de experiência profissional colaborando com pessoas talentosas para a criação de produtos digitais para uso comercial. Deixe-me compartilhar um pouco mais sobre o que posso contribuir:
+                                    Olá! Meu nome é Izabelle, sou programadora apaixonada por Front-end. Com 3 anos de experiência profissional colaborando com pessoas talentosas para a criação de produtos digitais para uso comercial. Deixe-me compartilhar um pouco mais sobre o que posso contribuir:
                                 </p>
                             </div>
                             <div className='flex flex-wrap justify-evenly gap-5 items-center'>
@@ -167,21 +167,25 @@ export default function Home() {
                                     <span className='text-sm'>Março de 2022 - Dezembro de 2024</span>
                                 </Item>
                                 <Item title="Cursos">
-                                    Programador Web - Senac (2022)
-                                    <br />
+                                    Programador Web - Senac Penha (2022)
+                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Técnico em Contabilidade - Etec Professor Camargo Aranha (2021)
-                                    <br />
+                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Técnico em Edificações - Etec de São Paulo (2021)
                                 </Item>
                                 <Item title="Certificações">
                                     Qualificação profissional em Domain Driven Design (Java), Cloud Computing - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
-                                    <br />
+                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Qualificação profissional em Responsive Web - Front End e User Experience - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
                                 </Item>
                                 <Item title="Experiências">
+                                    Dev. Front-End - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://pravy.com.br" target='_blank'>@Pravy </a>
+                                    <br />
+                                    <span className='text-sm'>Julho de 2024 - até o momento </span>
+                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Dev. Front-End - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.ateliedepropaganda.com.br" target='_blank'>@Ateliê de Propaganda </a>
                                     <br />
-                                    <span className='text-sm'>Julho de 2022 - até o momento</span>
+                                    <span className='text-sm'>Julho de 2022 - Julho de 2024 </span>
                                 </Item>
                             </div>
                         </div>
