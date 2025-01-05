@@ -40,6 +40,16 @@ export default function Header() {
                         </li>
                         <li>
                             <a
+                                href="#servicos"
+                                aria-label="Serviços"
+                                title="Serviços"
+                                className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
+                            >
+                                Serviços
+                            </a>
+                        </li>
+                        <li>
+                            <a
                                 href="#projetos"
                                 aria-label="Projetos"
                                 title="Projetos"
@@ -126,6 +136,16 @@ export default function Header() {
                                                     className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
                                                 >
                                                     Sobre mim
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#servicos"
+                                                    aria-label="Serviços"
+                                                    title="Serviços"
+                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
+                                                >
+                                                    Serviços
                                                 </a>
                                             </li>
                                             <li>

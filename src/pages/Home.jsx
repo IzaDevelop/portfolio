@@ -1,8 +1,16 @@
 import Layout from '../components/layout'
 import Item from '../components/item'
 import { DreamAgency, Memorygame, Minefields, ProximaJornada } from '../assets'
+import { useAppContext } from '../context/appContext';
+import { ArrowLineDown } from '@phosphor-icons/react';
+import Task from '../components/task';
 
 export default function Home() {
+    const {
+        handleDownload,
+        PDF,
+    } = useAppContext();
+
     return (
         <Layout>
             <article>
@@ -28,7 +36,7 @@ export default function Home() {
                                 <a
                                     href="#sobre"
                                     aria-label="Scroll down"
-                                    className="flex items-center justify-center w-10 h-10 mx-auto duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+                                    className="flex items-center justify-center w-10 h-10 mx-auto duration-300 transform border border-purple-800 dark:border-purple-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +61,7 @@ export default function Home() {
                                     Quem sou
                                 </h5>
                                 <p>
-                                    Olá! Meu nome é Izabelle, sou programadora apaixonada por Front-end. Com 3 anos de experiência profissional colaborando com pessoas talentosas para a criação de produtos digitais para uso comercial. Deixe-me compartilhar um pouco mais sobre o que posso contribuir:
+                                    Olá! Meu nome é Izabelle, sou programadora apaixonada por Front-end. Com 3 anos de experiência profissional, colaborando com pessoas talentosas para a criação de produtos digitais para uso comercial. Deixe-me compartilhar um pouco mais sobre o que posso contribuir:
                                 </p>
                             </div>
                             <div className='flex flex-wrap justify-evenly gap-5 items-center'>
@@ -123,9 +131,16 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
 
-                <section>
+                    <div class="flex items-center justify-center pt-5">
+                        <button onClick={() => { handleDownload(PDF) }} class="flex items-center border border-purple-400 text-black dark:text-white font-semibold py-2 ps-2 pr-4 rounded-full">
+                            <span class="flex items-center justify-center w-8 h-8 bg-purple-800 text-white rounded-full mr-2">
+                                <ArrowLineDown size={18} />
+                            </span>
+                            Download Currículo PDF
+                        </button>
+                    </div>
+
                     <div className="px-4 pt-10 pb-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
                         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
                             <div className="flex flex-col pb-5 sm:text-center">
@@ -188,6 +203,26 @@ export default function Home() {
                                     <span className='text-sm'>Julho de 2022 - Julho de 2024 </span>
                                 </Item>
                             </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id='servicos'>
+                    <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                        <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+                            <h2 className="max-w-lg font-sans text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto pb-10">
+                                Serviços
+                            </h2>
+                        </div>
+
+                        <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
+                            <Task icon={'design'} title={'UI/UX Design'} text={'Para que o usuário tenha uma melhor experiência do sistema web.'}/>
+                            <Task icon={'device'} title={'Web Design'} text={'Criação de layouts de sites atraente, objetivo e responsivo.'}/>
+                            <Task icon={'code'} title={'Desenvolvimento de sites'} text={'Desenvolvo sites profissionais, landing pages, portfólios e hotsites.'}/>
+                            <Task icon={'marketing'} title={'E-mail Marketing'} text={'Criação de campanhas de e-mail atrativas, com foco em engajamento e conversões.'}/>
+                            <Task icon={'signature'} title={'Assinaturas de e-mail'} text={'Desenvolvimento de assinaturas personalizadas, profissionais e compatíveis com diferentes plataformas.'}/>
+                            <Task icon={'game'} title={'Jogos para ativações'} text={'Crio interações que transmitem o tema do evento, além de chamarem a atenção do usuário.'}/>
                         </div>
                     </div>
                 </section>

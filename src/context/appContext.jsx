@@ -56,6 +56,20 @@ export function AppContextProvider(props) {
     const location = useLocation();
     const navigate = useNavigate();
 
+    // PDF Download
+
+    const PDF = 'https://izadevelop.vercel.app/Currículo-izabelle.pdf'
+
+    const handleDownload = (url) => {
+        const fileName = url.split('/').pop();
+        const aTag = document.createElement('a');
+        aTag.href = url;
+        aTag.setAttribute('download', fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    }
+
     return (
         <AppContext.Provider
             value={{
@@ -63,11 +77,14 @@ export function AppContextProvider(props) {
                 setTheme,
                 handleToggleTheme,
 
-                menu, 
+                menu,
                 setMenu,
 
                 location,
                 navigate,
+
+                handleDownload,
+                PDF
             }}
         >
             {props.children}
