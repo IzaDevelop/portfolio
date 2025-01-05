@@ -33,17 +33,6 @@ export default function Footer() {
                                 izabelledevelop@gmail.com
                             </a>
                         </div>
-                        <div className="flex items-center">
-                            <p className="mr-1 text-base">Whatsapp:</p>
-                            <a
-                                href="https://wa.me/5511974518906?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento"
-                                target='_blank'
-                                className="transition-colors duration-300 hover:text-purple-400"
-                                title="Whatsapp"
-                            >
-                                <WhatsappLogo size={30} />
-                            </a>
-                        </div>
                     </div>
                     <div>
                         <span className="text-base font-bold tracking-wide">
@@ -65,6 +54,14 @@ export default function Footer() {
                                 title="Linkedin"
                             >
                                 <LinkedinLogo size={30} />
+                            </a>
+                            <a
+                                href="https://wa.me/5511974518906?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento"
+                                target='_blank'
+                                className="transition-colors duration-300 hover:text-purple-400"
+                                title="Whatsapp"
+                            >
+                                <WhatsappLogo size={30} />
                             </a>
                         </div>
                     </div>
