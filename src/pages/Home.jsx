@@ -250,7 +250,7 @@ export default function Home() {
                                             <p className="mb-2">
                                                 Landing page para uma agência fictícia, que oferece planos de serviços digitais para outras empresas.
                                             </p>
-                                            <p className="mb-2">visite o site em: <span className='font-semibold'>https://dream-agency-beta.vercel.app</span></p>
+                                            <p className="mb-2">visite em: <span className='font-semibold'>https://dream-agency-beta.vercel.app</span></p>
                                             <small>#LandingPage #SiteProfissional</small>
                                         </div>
                                     </div>
@@ -272,7 +272,7 @@ export default function Home() {
                                             <p className="mb-2">
                                                 Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.
                                             </p>
-                                            <p className="mb-2">visite o site em: <span className='font-semibold'>https://proxima-jornada-beta.vercel.app</span></p>
+                                            <p className="mb-2">visite em: <span className='font-semibold'>https://proxima-jornada-beta.vercel.app</span></p>
                                             <small>#Hotsite #Promoção</small> 
                                         </div>
                                     </div>
@@ -294,7 +294,7 @@ export default function Home() {
                                             <p className="mb-2">
                                                 Um quebra-cabeça clássico que combina lógica, estratégia e um toque de sorte.
                                             </p>
-                                            <p className="mb-2">visite o site em: <span className='font-semibold'>https://game-minefields.vercel.appp</span></p>
+                                            <p className="mb-2">visite em: <span className='font-semibold'>https://game-minefields.vercel.appp</span></p>
                                             <small>#Ativação #Jogos</small> 
                                         </div>
                                     </div>
@@ -316,7 +316,7 @@ export default function Home() {
                                             <p className="mb-2">
                                                 Um jogo de tabuleiro que desafia a memória e a concentração dos jogadores.
                                             </p>
-                                            <p className="mb-2">visite o site em: <span className='font-semibold'>https://memory-pokemon.vercel.app</span></p>
+                                            <p className="mb-2">visite em: <span className='font-semibold'>https://memory-pokemon.vercel.app</span></p>
                                             <small>#Evento #Jogos</small> 
                                         </div>
                                     </div>
