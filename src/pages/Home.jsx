@@ -4,6 +4,8 @@ import { DreamAgency, Memorygame, Minefields, ProximaJornada } from '../assets'
 import { useAppContext } from '../context/appContext';
 import { ArrowLineDown } from '@phosphor-icons/react';
 import Task from '../components/task';
+import Project from '../components/project';
+import Skill from '../components/skill';
 
 export default function Home() {
     const {
@@ -36,7 +38,7 @@ export default function Home() {
                                 <a
                                     href="#sobre"
                                     aria-label="Scroll down"
-                                    className="flex items-center justify-center w-10 h-10 mx-auto duration-300 transform border border-purple-800 dark:border-purple-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+                                    className="flex items-center justify-center w-10 h-10 mx-auto duration-300 transform border border-purple-800 dark:border-purple-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110 animate-bounce"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -65,74 +67,26 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className='flex flex-wrap justify-evenly gap-5 items-center'>
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        React.js
-                                    </span>
-                                </div>
+                                <Skill skill={'React.js'} />
 
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        TypeScript
-                                    </span>
-                                </div>
+                                <Skill skill={'TypeScript'} />
 
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        Node.js
-                                    </span>
-                                </div>
+                                <Skill skill={'Node.js'} />
 
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        Git/Github
-                                    </span>
-                                </div>
+                                <Skill skill={'Git/Github'} />
 
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        Tailwind
-                                    </span>
-                                </div>
+                                <Skill skill={'Tailwind'} />
+                                
+                                <Skill skill={'GraphQl'} />
 
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        GraphQl
-                                    </span>
-                                </div>
+                                <Skill skill={'PHP'} />
 
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        PHP
-                                    </span>
-                                </div>
-
-                                <div className="group relative inline-block focus:outline-none focus:ring">
-                                    <span className="absolute inset-0 translate-x-0 translate-y-0 bg-purple-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
-                                    ></span>
-                                    <span className="relative inline-block border-2 border-purple-700 px-8 py-3 text-sm text-neutral-950 font-bold uppercase tracking-widest">
-                                        Figma
-                                    </span>
-                                </div>
+                                <Skill skill={'Figma'} />
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center pt-5">
+                    <div className="flex items-center justify-center pt-5 relative">
                         <button onClick={() => { handleDownload(PDF) }} className="flex items-center border border-purple-400 text-black dark:text-white font-semibold py-2 ps-2 pr-4 rounded-full">
                             <span className="flex items-center justify-center w-8 h-8 bg-purple-800 text-white rounded-full mr-2">
                                 <ArrowLineDown size={18} />
@@ -235,145 +189,30 @@ export default function Home() {
                             </h2>
                         </div>
                         <div className='mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8'>
-                            <a href="https://dream-agency-beta.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <img
-                                    src={DreamAgency}
-                                    alt=""
-                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                                />
-
-                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
-                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Dream Agency</h3>
-
-                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
-                                    Landing page para uma agência fictícia, que oferece planos de serviços digitais para outras empresas.
-                                    </p>
-
-                                    <form className="mt-4 flex gap-4">
-                                        <button
-                                            type="button"
-                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
-                                        >
-                                           Visitar
-                                        </button>
-                                    </form>
-                                </div>
-                            </a>
-
-                            <a href="https://proxima-jornada-beta.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <img
-                                    src={ProximaJornada}
-                                    alt=""
-                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                                />
-
-                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
-                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Próxima Jornada</h3>
-
-                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
-                                    Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.
-                                    </p>
-
-                                    <form className="mt-4 flex gap-4">
-                                        <button
-                                            type="button"
-                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
-                                        >
-                                           Visitar
-                                        </button>
-                                    </form>
-                                </div>
-                            </a>
-
-                            <a href="https://game-minefields.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <img
-                                    src={Minefields}
-                                    alt=""
-                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                                />
-
-                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
-                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Campo Minado</h3>
-
-                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
-                                    Um quebra-cabeça clássico que combina lógica, estratégia e um toque de sorte.
-                                    </p>
-
-                                    <form className="mt-4 flex gap-4">
-                                        <button
-                                            type="button"
-                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
-                                        >
-                                           Jogar
-                                        </button>
-                                    </form>
-                                </div>
-                            </a>
-
-                            <a href="https://memory-pokemon.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <img
-                                    src={Memorygame}
-                                    alt=""
-                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                                />
-
-                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
-                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Jogo da Memória</h3>
-
-                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
-                                    Um jogo de tabuleiro que desafia a memória e a concentração dos jogadores.
-                                    </p>
-
-                                    <form className="mt-4 flex gap-4">
-                                        <button
-                                            type="button"
-                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
-                                        >
-                                           Jogar
-                                        </button>
-                                    </form>
-                                </div>
-                            </a>
-
-                            {/* <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <a href="/" target='_blank' aria-label="Article">
-                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                        <img
-                                            src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                                            className="object-cover w-full h-64"
-                                            alt=""
-                                        />
-                                        <div className="pt-5 px-4">
-                                            <p className="text-2xl font-bold leading-5 pb-2">
-                                                Rockpedia
-                                            </p>
-                                            <p className="mb-4">
-                                                Blog sobre bandas, shows, intrumentos e curiosidades ligadas ao mundo da música.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <a href="/" target='_blank' aria-label="Article">
-                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                        <img
-                                            src="https://images.pexels.com/photos/2123755/pexels-photo-2123755.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                                            className="object-cover w-full h-64"
-                                            alt=""
-                                        />
-                                        <div className="pt-5 px-4">
-                                            <p className="text-2xl font-bold leading-5 pb-2">
-                                                Lorem Ipsum
-                                            </p>
-                                            <p className="mb-4">
-                                                Lorem ipsum dolor sit amet.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div> */}
+                            <Project 
+                                link={'https://dream-agency-beta.vercel.app'}
+                                image={DreamAgency}
+                                title={'Dream Agency'}
+                                description={'Landing page para uma agência fictícia, que oferece planos de serviços digitais para outras empresas.'}
+                            />
+                            <Project 
+                                link={'https://proxima-jornada-beta.vercel.app'}
+                                image={ProximaJornada}
+                                title={'Próxima Jornada'}
+                                description={'Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.'}
+                            />
+                            <Project 
+                                link={'https://game-minefields.vercel.app'}
+                                image={Minefields}
+                                title={'Campo Minado'}
+                                description={'Um quebra-cabeça clássico que combina lógica, estratégia e um toque de sorte.'}
+                            />
+                            <Project 
+                                link={'https://memory-pokemon.vercel.app'}
+                                image={Memorygame}
+                                title={'Jogo da Memória'}
+                                description={'Um jogo de tabuleiro que desafia a memória e a concentração dos jogadores.'}
+                            />
                         </div>
                     </div>
                 </section>
