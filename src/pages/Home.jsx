@@ -87,7 +87,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex items-center justify-center pt-5 relative">
-                        <button onClick={() => { handleDownload(PDF) }} className="flex items-center border border-purple-400 text-black dark:text-white font-semibold py-2 ps-2 pr-4 rounded-full">
+                        <button onClick={() => { handleDownload(PDF) }} className="flex items-center border border-purple-400 text-black dark:text-white font-semibold py-2 ps-2 pr-4 rounded-full transition hover:scale-105">
                             <span className="flex items-center justify-center w-8 h-8 bg-purple-800 text-white rounded-full mr-2">
                                 <ArrowLineDown size={18} />
                             </span>
