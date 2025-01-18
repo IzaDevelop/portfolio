@@ -132,9 +132,9 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-center pt-5">
-                        <button onClick={() => { handleDownload(PDF) }} class="flex items-center border border-purple-400 text-black dark:text-white font-semibold py-2 ps-2 pr-4 rounded-full">
-                            <span class="flex items-center justify-center w-8 h-8 bg-purple-800 text-white rounded-full mr-2">
+                    <div className="flex items-center justify-center pt-5">
+                        <button onClick={() => { handleDownload(PDF) }} className="flex items-center border border-purple-400 text-black dark:text-white font-semibold py-2 ps-2 pr-4 rounded-full">
+                            <span className="flex items-center justify-center w-8 h-8 bg-purple-800 text-white rounded-full mr-2">
                                 <ArrowLineDown size={18} />
                             </span>
                             Download Currículo PDF
@@ -183,21 +183,21 @@ export default function Home() {
                                 </Item>
                                 <Item title="Cursos">
                                     Programador Web - Senac Penha (2022)
-                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
+                                    <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Técnico em Contabilidade - Etec Professor Camargo Aranha (2021)
-                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
+                                    <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Técnico em Edificações - Etec de São Paulo (2021)
                                 </Item>
                                 <Item title="Certificações">
                                     Qualificação profissional em Domain Driven Design (Java), Cloud Computing - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
-                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
+                                    <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Qualificação profissional em Responsive Web - Front End e User Experience - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.fiap.com.br" target='_blank'>@Fiap </a>
                                 </Item>
                                 <Item title="Experiências">
                                     Dev. Front-End - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://pravy.com.br" target='_blank'>@Pravy </a>
                                     <br />
                                     <span className='text-sm'>Julho de 2024 - até o momento </span>
-                                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
+                                    <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700" />
                                     Dev. Front-End - <a className='font-bold text-purple-600 dark:text-purple-400' href="https://www.ateliedepropaganda.com.br" target='_blank'>@Ateliê de Propaganda </a>
                                     <br />
                                     <span className='text-sm'>Julho de 2022 - Julho de 2024 </span>
@@ -217,12 +217,12 @@ export default function Home() {
                         </div>
 
                         <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
-                            <Task icon={'design'} title={'UI/UX Design'} text={'Para que o usuário tenha uma melhor experiência do sistema web.'}/>
-                            <Task icon={'device'} title={'Web Design'} text={'Criação de layouts de sites atraente, objetivo e responsivo.'}/>
-                            <Task icon={'code'} title={'Desenvolvimento de sites'} text={'Desenvolvo sites profissionais, landing pages, portfólios e hotsites.'}/>
-                            <Task icon={'marketing'} title={'E-mail Marketing'} text={'Criação de campanhas de e-mail atrativas, com foco em engajamento e conversões.'}/>
-                            <Task icon={'signature'} title={'Assinaturas de e-mail'} text={'Desenvolvimento de assinaturas personalizadas, profissionais e compatíveis com diferentes plataformas.'}/>
-                            <Task icon={'game'} title={'Jogos para ativações'} text={'Crio interações que transmitem o tema do evento, além de chamarem a atenção do usuário.'}/>
+                            <Task icon={'design'} title={'UI/UX Design'} text={'Para que o usuário tenha uma melhor experiência do sistema web.'} />
+                            <Task icon={'device'} title={'Web Design'} text={'Criação de layouts de sites atraente, objetivo e responsivo.'} />
+                            <Task icon={'code'} title={'Desenvolvimento de sites'} text={'Desenvolvo sites profissionais, landing pages, portfólios e hotsites.'} />
+                            <Task icon={'marketing'} title={'E-mail Marketing'} text={'Criação de campanhas de e-mail atrativas, com foco em engajamento e conversões.'} />
+                            <Task icon={'signature'} title={'Assinaturas de e-mail'} text={'Desenvolvimento de assinaturas personalizadas, profissionais e compatíveis com diferentes plataformas.'} />
+                            <Task icon={'game'} title={'Jogos para ativações'} text={'Crio interações que transmitem o tema do evento, além de chamarem a atenção do usuário.'} />
                         </div>
                     </div>
                 </section>
@@ -235,93 +235,105 @@ export default function Home() {
                             </h2>
                         </div>
                         <div className='mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8'>
-                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <a href="https://dream-agency-beta.vercel.app" target='_blank' aria-label="Article">
-                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                        <img
-                                            src={DreamAgency}
-                                            className="object-cover w-full h-64"
-                                            alt=""
-                                        />
-                                        <div className="py-5 px-4">
-                                            <p className="text-2xl font-bold leading-5 pb-2">
-                                                Dream Agency
-                                            </p>
-                                            <p className="mb-2">
-                                                Landing page para uma agência fictícia, que oferece planos de serviços digitais para outras empresas.
-                                            </p>
-                                            <p className="mb-2">visite em: <span className='font-semibold'>https://dream-agency-beta.vercel.app</span></p>
-                                            <small>#LandingPage #SiteProfissional</small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="https://dream-agency-beta.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <img
+                                    src={DreamAgency}
+                                    alt=""
+                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                                />
 
-                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <a href="https://proxima-jornada-beta.vercel.app" target='_blank' aria-label="Article">
-                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                        <img
-                                            src={ProximaJornada}
-                                            className="object-cover w-full h-64"
-                                            alt=""
-                                        />
-                                        <div className="py-5 px-4">
-                                            <p className="text-2xl font-bold leading-5 pb-2">
-                                                Próxima Jornada
-                                            </p>
-                                            <p className="mb-2">
-                                                Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.
-                                            </p>
-                                            <p className="mb-2">visite em: <span className='font-semibold'>https://proxima-jornada-beta.vercel.app</span></p>
-                                            <small>#Hotsite #Promoção</small> 
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
+                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Dream Agency</h3>
 
-                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <a href="https://game-minefields.vercel.app" target='_blank' aria-label="Article">
-                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                        <img
-                                            src={Minefields}
-                                            className="object-cover w-full h-[303.8px]"
-                                            alt=""
-                                        />
-                                        <div className="py-5 px-4">
-                                            <p className="text-2xl font-bold leading-5 pb-2">
-                                                Campo Minado - Desktop
-                                            </p>
-                                            <p className="mb-2">
-                                                Um quebra-cabeça clássico que combina lógica, estratégia e um toque de sorte.
-                                            </p>
-                                            <p className="mb-2">visite em: <span className='font-semibold'>https://game-minefields.vercel.appp</span></p>
-                                            <small>#Ativação #Jogos</small> 
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
+                                    Landing page para uma agência fictícia, que oferece planos de serviços digitais para outras empresas.
+                                    </p>
 
-                            <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
-                                <a href="https://memory-pokemon.vercel.app" target='_blank' aria-label="Article">
-                                    <div className="overflow-hidden transition-shadow duration-300 rounded">
-                                        <img
-                                            src={Memorygame}
-                                            className="object-cover w-full h-[303.8px]"
-                                            alt=""
-                                        />
-                                        <div className="py-5 px-4">
-                                            <p className="text-2xl font-bold leading-5 pb-2">
-                                                Jogo da Memória Pokemon - Desktop
-                                            </p>
-                                            <p className="mb-2">
-                                                Um jogo de tabuleiro que desafia a memória e a concentração dos jogadores.
-                                            </p>
-                                            <p className="mb-2">visite em: <span className='font-semibold'>https://memory-pokemon.vercel.app</span></p>
-                                            <small>#Evento #Jogos</small> 
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                                    <form className="mt-4 flex gap-4">
+                                        <button
+                                            type="button"
+                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
+                                        >
+                                           Visitar
+                                        </button>
+                                    </form>
+                                </div>
+                            </a>
+
+                            <a href="https://proxima-jornada-beta.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <img
+                                    src={ProximaJornada}
+                                    alt=""
+                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                                />
+
+                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
+                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Próxima Jornada</h3>
+
+                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
+                                    Hotsite para uma promoção fictícia, onde participantes concorrem a uma viagem paradisíaca com todas as despesas pagas.
+                                    </p>
+
+                                    <form className="mt-4 flex gap-4">
+                                        <button
+                                            type="button"
+                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
+                                        >
+                                           Visitar
+                                        </button>
+                                    </form>
+                                </div>
+                            </a>
+
+                            <a href="https://game-minefields.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <img
+                                    src={Minefields}
+                                    alt=""
+                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                                />
+
+                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
+                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Campo Minado</h3>
+
+                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
+                                    Um quebra-cabeça clássico que combina lógica, estratégia e um toque de sorte.
+                                    </p>
+
+                                    <form className="mt-4 flex gap-4">
+                                        <button
+                                            type="button"
+                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
+                                        >
+                                           Jogar
+                                        </button>
+                                    </form>
+                                </div>
+                            </a>
+
+                            <a href="https://memory-pokemon.vercel.app" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md">
+                                <img
+                                    src={Memorygame}
+                                    alt=""
+                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                                />
+
+                                <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
+                                    <h3 className="mt-1.5 text-lg font-medium text-gray-900 dark:text-white">Jogo da Memória</h3>
+
+                                    <p className="mt-1.5 line-clamp-3 text-gray-700 dark:text-zinc-300">
+                                    Um jogo de tabuleiro que desafia a memória e a concentração dos jogadores.
+                                    </p>
+
+                                    <form className="mt-4 flex gap-4">
+                                        <button
+                                            type="button"
+                                            className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white transition hover:scale-105"
+                                        >
+                                           Jogar
+                                        </button>
+                                    </form>
+                                </div>
+                            </a>
 
                             {/* <div className="h-auto rounded-lg bg-purple-50 dark:bg-neutral-950 dark:text-white text-neutral-950 lg:col-span-2 dark:border-none border-2 shadow-md">
                                 <a href="/" target='_blank' aria-label="Article">
