@@ -27,7 +27,7 @@ export function AppContextProvider(props) {
         localStorage.setItem("theme", nextTheme);
     }, [theme]);
 
-    // TAMANHO DE TELA
+    // Screen Size
 
     function getWindowDimensions() {
         const { innerWidth: width, innerHeight: height } = window;
@@ -76,7 +76,7 @@ export function AppContextProvider(props) {
         aTag.remove();
     }
 
-    // chenge language
+    // Change Language
 
     const { t, i18n } = useTranslation();
 
