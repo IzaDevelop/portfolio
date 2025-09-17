@@ -35,7 +35,8 @@
                     "items": [
                         {
                             "title": "Tecnologo em Sistemas para Internet",
-                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
+                            "institution": "@Fiap",
+                            "link": "https://www.fiap.com.br",
                             "period": "Março de 2022 - Dezembro de 2024"
                         }
                     ]
@@ -46,21 +47,25 @@
                         {
                             "title": "Inglês",
                             "institution": "Aulas particulares (intermediário)",
+                            "link": null,
                             "period": "Julho 2024 - até o momento"
                         },
                         {
                             "title": "Programador Web",
-                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.sp.senac.br' target='_blank'>@Senac </a>",
+                            "institution": "@Senac",
+                            "link": "https://www.sp.senac.br",
                             "period": "Janeiro 2022 - Julho 2022"
                         },
                         {
                             "title": "Técnico em Edificações",
-                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://etecsp.cps.sp.gov.br' target='_blank'>@Etec de São Paulo</a>",
+                            "institution": "@Etec de São Paulo",
+                            "link": "https://etecsp.cps.sp.gov.br",
                             "period": "Fevereiro 2020 - Novembro 2021"
                         },
                         {
                             "title": "Técnico em Contabilidade",
-                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://eteccamargoaranha.cps.sp.gov.br' target='_blank'>@Etec Professor Camargo Aranha </a>",
+                            "institution": "@Etec Professor Camargo Aranha",
+                            "link": "https://eteccamargoaranha.cps.sp.gov.br",
                             "period": "Fevereiro 2019 - Novembro 2021"
                         }
                     ]
@@ -68,10 +73,26 @@
                 "certifications": {
                     "section": "Certificações",
                     "items": [
-                        "Qualificação profissional em Domain Driven Design (Java), Cloud Computing - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
-                        "Qualificação profissional em Responsive Web - Front End e User Experience - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
-                        "Introdução ao Linux - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://app.santanderopenacademy.com' target='_blank'>@Santander </a>",
-                        "Versionamento de Código com Git e GitHub - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.dio.me/' target='_blank'>@Dio </a>"
+                        {
+                            "title": "Qualificação profissional em Domain Driven Design (Java), Cloud Computing",
+                            "link": "https://www.fiap.com.br",
+                            "institution": "@Fiap"                            
+                        },
+                        {
+                            "title": "Qualificação profissional em Responsive Web - Front End e User Experience",
+                            "link": "https://www.fiap.com.br",
+                            "institution": "@Fiap"                            
+                        },
+                        {
+                            "title": "Introdução ao Linux",
+                            "link": "https://app.santanderopenacademy.com",
+                            "institution": "@Santander"                            
+                        },
+                        {
+                            "title": "Versionamento de Código com Git e GitHub",
+                            "link": "https://www.dio.me/",
+                            "institution": "@Dio"                            
+                        }
                     ]
                 },
                 "experience": {
@@ -79,14 +100,16 @@
                     "items": [
                         {
                             "title": "Dev. Front-End Pleno",
-                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://pravy.com.br' target='_blank'>@Pravy </a>",
+                            "institution": "@Pravy",
                             "period": "Julho de 2024 - até o momento",
+                            "link": "https://pravy.com.br",
                             "tasks": "Desenvolvimento e manutenção de projetos digitais para grandes clientes como Lubrax, Vibra, Postos BR e Pinheiro Neto, criação de e-mails marketing personalizados para campanhas da Elo e colaboração em times multidisciplinares, garantindo entregas ágeis e de qualidade.",
                             "skills": "AngularJS, JavaScript, TypeScript, REST API, Laravel, MySQL, Drupal, Git, Figma"
                         },
                         {
                             "title": "Dev. Front-End Júnior",
-                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.ateliedepropaganda.com.br' target='_blank'>@Ateliê de Propaganda </a>",
+                            "institution": "@Ateliê de Propaganda",
+                            "link": "https://www.ateliedepropaganda.com.br",
                             "period": "Julho de 2022 - Julho de 2024",
                             "tasks": "Desenvolvimento e manutenção de sites e aplicações web para clientes como LG, Seagate, Lenovo e Grupo Comolatti, criação de jogos web interativos para ativações em eventos da RedHat e produção de e-mails marketing responsivos para campanhas de clientes e uso interno.",
                             "skills": "ReactJS, JavaScript, Tailwind, TypeScript, REST API, Git, Figma"

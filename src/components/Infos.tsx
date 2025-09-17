@@ -7,9 +7,21 @@ export default function Infos({ title, items }) {
                 <p className="text-lg font-semibold">{title}</p>
             </div>
             <div className="p-4 pt-0">
-                {items.map((item: string, index: number) => (
+                {items.map((item: any, index: number) => (
                     <React.Fragment key={index}>
-                        <p dangerouslySetInnerHTML={{ __html: item }} />
+                        <p>
+                            {item.title} -{" "}
+                            {item.link !== null ? (
+                                <a
+                                    className="font-bold text-purple-600 dark:text-purple-400"
+                                    href={item.link}
+                                    target="_blank"
+                                    dangerouslySetInnerHTML={{ __html: item.institution }}
+                                />
+                            ) : (
+                                item.institution
+                            )}
+                        </p>
                         <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-zinc-700 last:hidden" />
                     </React.Fragment>
                 ))}

@@ -31,12 +31,13 @@
       "education": {
         "title": "A little more about my journey so far.",
         "degree": {
-          "section": "College Degree",
+          "section": "College",
           "items": [
             {
-              "title": "Technology in Internet Systems",
-              "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
-              "period": "March 2022 ‑ December 2024"
+              "title": "Technologist in Internet Systems",
+              "institution": "@Fiap",
+              "link": "https://www.fiap.com.br",
+              "period": "March 2022 - December 2024"
             }
           ]
         },
@@ -46,49 +47,71 @@
             {
               "title": "English",
               "institution": "Private lessons (intermediate)",
-              "period": "July 2024 ‑ Present"
+              "link": null,
+              "period": "July 2024 - Present"
             },
             {
-              "title": "Web Programmer",
-              "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.sp.senac.br' target='_blank'>@Senac </a>",
-              "period": "January 2022 ‑ July 2022"
+              "title": "Web Developer",
+              "institution": "@Senac",
+              "link": "https://www.sp.senac.br",
+              "period": "January 2022 - July 2022"
             },
             {
-              "title": "Technical in Building Construction",
-              "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://etecsp.cps.sp.gov.br' target='_blank'>@Etec de São Paulo </a>",
-              "period": "February 2020 ‑ November 2021"
+              "title": "Building Technician",
+              "institution": "@Etec de São Paulo",
+              "link": "https://etecsp.cps.sp.gov.br",
+              "period": "February 2020 - November 2021"
             },
             {
-              "title": "Technical in Accounting",
-              "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://eteccamargoaranha.cps.sp.gov.br' target='_blank'>@Etec Professor Camargo Aranha </a>",
-              "period": "February 2019 ‑ November 2021"
+              "title": "Accounting Technician",
+              "institution": "@Etec Professor Camargo Aranha",
+              "link": "https://eteccamargoaranha.cps.sp.gov.br",
+              "period": "February 2019 - November 2021"
             }
           ]
         },
         "certifications": {
           "section": "Certifications",
           "items": [
-            "Professional qualification in Domain Driven Design (Java), Cloud Computing ‑ <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
-            "Professional qualification in Responsive Web ‑ Front End and User Experience ‑ <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
-            "Introduction to Linux ‑ <a class='font-bold text-purple-600 dark:text-purple-400' href='https://app.santanderopenacademy.com' target='_blank'>@Santander </a>",
-            "Code Versioning with Git and GitHub ‑ <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.dio.me/' target='_blank'>@Dio </a>"
+            {
+              "title": "Professional Qualification in Domain Driven Design (Java), Cloud Computing",
+              "link": "https://www.fiap.com.br",
+              "institution": "@Fiap"
+            },
+            {
+              "title": "Professional Qualification in Responsive Web - Front End and User Experience",
+              "link": "https://www.fiap.com.br",
+              "institution": "@Fiap"
+            },
+            {
+              "title": "Introduction to Linux",
+              "link": "https://app.santanderopenacademy.com",
+              "institution": "@Santander"
+            },
+            {
+              "title": "Code Versioning with Git and GitHub",
+              "link": "https://www.dio.me/",
+              "institution": "@Dio"
+            }
           ]
         },
         "experience": {
           "section": "Experience",
           "items": [
             {
-              "title": "Mid‑Level Front‑End Developer",
-              "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://pravy.com.br' target='_blank'>@Pravy </a>",
-              "period": "July 2024 ‑ Present",
-              "tasks": "Developing and maintaining digital projects for major clients such as Lubrax, Vibra, Postos BR, and Pinheiro Neto; creating custom marketing emails for Elo campaigns; collaborating with cross‑functional teams to ensure agile and high‑quality deliveries.",
+              "title": "Mid-Level Front-End Developer",
+              "institution": "@Pravy",
+              "period": "July 2024 - Present",
+              "link": "https://pravy.com.br",
+              "tasks": "Development and maintenance of digital projects for major clients such as Lubrax, Vibra, Postos BR, and Pinheiro Neto. Creation of personalized email marketing campaigns for Elo and collaboration in multidisciplinary teams, ensuring agile and high-quality deliveries.",
               "skills": "AngularJS, JavaScript, TypeScript, REST API, Laravel, MySQL, Drupal, Git, Figma"
             },
             {
-              "title": "Junior Front‑End Developer",
-              "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.ateliedepropaganda.com.br' target='_blank'>@Ateliê de Propaganda </a>",
-              "period": "July 2022 ‑ July 2024",
-              "tasks": "Developed and maintained websites and web applications for clients such as LG, Seagate, Lenovo, and Grupo Comolatti; created interactive web games for RedHat event activations; produced responsive marketing emails for client and internal campaigns.",
+              "title": "Junior Front-End Developer",
+              "institution": "@Ateliê de Propaganda",
+              "link": "https://www.ateliedepropaganda.com.br",
+              "period": "July 2022 - July 2024",
+              "tasks": "Development and maintenance of websites and web applications for clients such as LG, Seagate, Lenovo, and Grupo Comolatti. Creation of interactive web games for RedHat event activations and production of responsive email marketing campaigns for clients and internal use.",
               "skills": "ReactJS, JavaScript, Tailwind, TypeScript, REST API, Git, Figma"
             }
           ]
