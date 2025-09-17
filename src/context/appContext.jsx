@@ -1,5 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import "../i18n";
 
 const AppContext = createContext({});
 
@@ -58,7 +60,11 @@ export function AppContextProvider(props) {
 
     // PDF Download
 
-    const PDF = 'https://izadevelop.vercel.app/Currículo-izabelle.pdf'
+    const PDFen = 'https://izadevelop.vercel.app/cv-izabelle-en.pdf'
+    const PDFpt = 'https://izadevelop.vercel.app/cv-izabelle-pt.pdf'
+
+    const currentLang = localStorage.getItem("i18nextLng") || "pt";
+    const PDFFile = currentLang === "pt" ? PDFpt : PDFen;
 
     const handleDownload = (url) => {
         const fileName = url.split('/').pop();
@@ -69,6 +75,15 @@ export function AppContextProvider(props) {
         aTag.click();
         aTag.remove();
     }
+
+    // chenge language
+
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lang) => {
+        i18n.changeLanguage(lang);
+        localStorage.setItem("i18nextLng", lang);
+    };
 
     return (
         <AppContext.Provider
@@ -84,7 +99,12 @@ export function AppContextProvider(props) {
                 navigate,
 
                 handleDownload,
-                PDF
+                PDFen,
+                PDFpt,
+                PDFFile,
+
+                changeLanguage,
+                t
             }}
         >
             {props.children}

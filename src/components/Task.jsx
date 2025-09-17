@@ -1,4 +1,4 @@
-import { Code, Devices, GameController, Newspaper, PencilSimple, Signature } from "@phosphor-icons/react";
+import { Code, Devices, GameController, Newspaper, Signature, PersonArmsSpread, Headset, Wrench, DesktopTower } from "@phosphor-icons/react";
 
 export default function Task({icon, title, text }) {
     return (
@@ -10,11 +10,14 @@ export default function Task({icon, title, text }) {
             <div className="relative p-5 text-black dark:text-white rounded">
                 <div className="flex flex-col mb-2 lg:items-center lg:flex-row">
                     <div className="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-purple-400 text-black lg:mb-0">
-                       {icon === 'design' && <PencilSimple size={25} />}
+                       {icon === 'code' && <Code size={25} />}
                        {icon === 'device' && <Devices size={25} />}
+                       {icon === 'wrench' && <Wrench size={25} />}
+                       {icon === 'headset' && <Headset size={25} />}
+                       {icon === 'desktop' && <DesktopTower  size={25} />}
+                       {icon === 'person' && <PersonArmsSpread size={25} />}
                        {icon === 'marketing' && <Newspaper size={25} />}
                        {icon === 'signature' && <Signature size={25} />}
-                       {icon === 'code' && <Code size={25} />}
                        {icon === 'game' && <GameController size={25} />}
                     </div>
                     <h6 className="font-semibold leading-5">{title}</h6>

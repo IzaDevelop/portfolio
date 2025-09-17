@@ -1,0 +1,184 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "Sobre mim",
+        "services": "Serviços",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "home": {
+        "welcome": {
+            "title": "Bem-vindo(a) ao meu portfólio digital como desenvolvedora front-end",
+            "subtitle": "Dentro dessas paredes virtuais, convido você a explorar minha criatividade, dedicação e conhecimento técnico no mundo do desenvolvimento web."
+        },
+        "about": {
+            "title": "Quem sou",
+            "text": "Olá! Meu nome é Izabelle, sou Desenvolvedora Front-end Pleno com mais de 3 anos de experiência construindo interfaces responsivas, acessíveis e escaláveis, sempre buscando criar componentes reutilizáveis e entregar soluções que melhorem a experiência do usuário. <br> <br> Se você procura uma desenvolvedora dedicada e apaixonada por tecnologia, adoraria conversar sobre como posso contribuir para o sucesso do seu projeto ou empresa. Vamos construir algo incrível juntos!",
+            "skills": [
+                "React.js",
+                "Angular.js",
+                "Cypress.io",
+                "JavaScript",
+                "TypeScript",
+                "Tailwind",
+                "Rest API",
+                "Node.js",
+                "Laravel",
+                "Git/Github",
+                "Figma"
+            ],
+            "cv": "Download Currículo PDF",
+            "education": {
+                "title": "Um pouco mais sobre a minha jornada até aqui.",
+                "degree": {
+                    "section": "Faculdade",
+                    "items": [
+                        {
+                            "title": "Tecnologo em Sistemas para Internet",
+                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
+                            "period": "Março de 2022 - Dezembro de 2024"
+                        }
+                    ]
+                },
+                "courses": {
+                    "section": "Cursos",
+                    "items": [
+                        {
+                            "title": "Inglês",
+                            "institution": "Aulas particulares (intermediário)",
+                            "period": "Julho 2024 - até o momento"
+                        },
+                        {
+                            "title": "Programador Web",
+                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.sp.senac.br' target='_blank'>@Senac </a>",
+                            "period": "Janeiro 2022 - Julho 2022"
+                        },
+                        {
+                            "title": "Técnico em Edificações",
+                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://etecsp.cps.sp.gov.br' target='_blank'>@Etec de São Paulo</a>",
+                            "period": "Fevereiro 2020 - Novembro 2021"
+                        },
+                        {
+                            "title": "Técnico em Contabilidade",
+                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://eteccamargoaranha.cps.sp.gov.br' target='_blank'>@Etec Professor Camargo Aranha </a>",
+                            "period": "Fevereiro 2019 - Novembro 2021"
+                        }
+                    ]
+                },
+                "certifications": {
+                    "section": "Certificações",
+                    "items": [
+                        "Qualificação profissional em Domain Driven Design (Java), Cloud Computing - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
+                        "Qualificação profissional em Responsive Web - Front End e User Experience - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.fiap.com.br' target='_blank'>@Fiap </a>",
+                        "Introdução ao Linux - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://app.santanderopenacademy.com' target='_blank'>@Santander </a>",
+                        "Versionamento de Código com Git e GitHub - <a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.dio.me/' target='_blank'>@Dio </a>"
+                    ]
+                },
+                "experience": {
+                    "section": "Experiências",
+                    "items": [
+                        {
+                            "title": "Dev. Front-End Pleno",
+                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://pravy.com.br' target='_blank'>@Pravy </a>",
+                            "period": "Julho de 2024 - até o momento",
+                            "tasks": "Desenvolvimento e manutenção de projetos digitais para grandes clientes como Lubrax, Vibra, Postos BR e Pinheiro Neto, criação de e-mails marketing personalizados para campanhas da Elo e colaboração em times multidisciplinares, garantindo entregas ágeis e de qualidade.",
+                            "skills": "AngularJS, JavaScript, TypeScript, REST API, Laravel, MySQL, Drupal, Git, Figma"
+                        },
+                        {
+                            "title": "Dev. Front-End Júnior",
+                            "institution": "<a class='font-bold text-purple-600 dark:text-purple-400' href='https://www.ateliedepropaganda.com.br' target='_blank'>@Ateliê de Propaganda </a>",
+                            "period": "Julho de 2022 - Julho de 2024",
+                            "tasks": "Desenvolvimento e manutenção de sites e aplicações web para clientes como LG, Seagate, Lenovo e Grupo Comolatti, criação de jogos web interativos para ativações em eventos da RedHat e produção de e-mails marketing responsivos para campanhas de clientes e uso interno.",
+                            "skills": "ReactJS, JavaScript, Tailwind, TypeScript, REST API, Git, Figma"
+                        }
+                    ]
+                }
+            }
+        },
+        "services": {
+            "title": "Serviços",
+            "items": [
+                {
+                    "icon": "code",
+                    "title": "Desenvolvimento Web",
+                    "description": "Criação de sites e aplicações web utilizando as mais recentes tecnologias e melhores práticas de desenvolvimento."
+                },
+                {
+                    "icon": "device",
+                    "title": "Web Design Responsivo",
+                    "description": "Garantia de que seu site ou aplicação funcione em todos os dispositivos, proporcionando uma experiência de usuário consistente."
+                },
+                {
+                    "icon": "wrench",
+                    "title": "Otimização de Performance",
+                    "description": "Melhoria do desempenho do seu site ou aplicação, garantindo tempos de carregamento rápidos e uma experiência fluida."
+                },
+                {
+                    "icon": "headset",
+                    "title": "Manutenção e Suporte",
+                    "description": "Serviços contínuos de manutenção e suporte para garantir que seu site ou aplicação esteja sempre atualizado e funcionando corretamente."
+                },
+                {
+                    "icon": "desktop",
+                    "title": "Integração de APIs",
+                    "description": "Conexão do seu site ou aplicação com serviços externos para ampliar funcionalidades e melhorar a experiência do usuário."
+                },
+                {
+                    "icon": "person",
+                    "title": "Acessibilidade Web",
+                    "description": "Acessibilidade a todos os usuários do seu site ou aplicação, incluindo aqueles com deficiências, seguindo as diretrizes de acessibilidade."
+                },
+                {
+                    "icon": "marketing",
+                    "title": "E-mail Marketing",
+                    "description": "Criação de campanhas de e-mail personalizadas e atrativas, com foco em engajamento e conversões."
+                },
+                {
+                    "icon": "signature",
+                    "title": "Assinaturas de e-mail",
+                    "description": "Desenvolvimento de assinaturas personalizadas, profissionais e compatíveis com diferentes plataformas."
+                },
+                {
+                    "icon": "game",
+                    "title": "Jogos para ativações",
+                    "description": "Produção de jogos interativos que transmitem o tema do evento."
+                }
+            ]
+        },
+        "projects": {
+            "title": "Projetos",
+            "items": [
+                {
+                    "title": "Dream Agency",
+                    "image": "./images/dream-agency.png",
+                    "description": "Landing page moderna para uma agência fictícia de serviços digitais, destacando planos e soluções com design responsivo e foco em conversão.",
+                    "link": "https://dream-agency-beta.vercel.app"
+                },
+                {
+                    "title": "Próxima Jornada",
+                    "image": "./images/proxima-jornada.png",
+                    "description": "Hotsite para uma campanha promocional fictícia, onde usuários podem se ver informações e concorrer a uma viagem paradisíaca com tudo incluso.",
+                    "link": "https://proxima-jornada-beta.vercel.app"
+                },
+                {
+                    "title": "Campo Minado",
+                    "image": "./images/minefields.png",
+                    "description": "Versão digital do clássico Campo Minado, desenvolvida para desafiar lógica e estratégia, com interface simples e jogabilidade dinâmica.",
+                    "link": "https://game-minefields.vercel.app"
+                },
+                {
+                    "title": "Jogo da Memória",
+                    "image": "./images/memory-game.png",
+                    "description": "Jogo da memória inspirado em Pokémon, que estimula concentração e agilidade, com design atrativo e mecânica de fácil interação.",
+                    "link": "https://memory-pokemon.vercel.app"
+                }
+            ]
+        }
+    },
+    "footer": {
+        "text": "Desenvolvedora, construindo o Front-end de sites  <br class='hidden lg:block' />  e aplicativos Web.",
+        "contact": "Contato",
+        "social": "Social",
+        "copyright": "Copyright © 2023 <a href='https://izadevelop.vercel.app' class='font-semibold transition-colors duration-300 hover:text-purple-400'>Izabelle Develop</a>. Todos os direitos reservados."
+    }
+}

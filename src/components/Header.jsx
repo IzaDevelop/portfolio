@@ -1,6 +1,6 @@
-import { Logo } from '../../assets'
+import { Logo } from '../assets'
 import { List, Sun, Moon, X } from '@phosphor-icons/react'
-import { useAppContext } from '../../context/appContext'
+import { useAppContext } from '../context/appContext'
 
 export default function Header() {
     const {
@@ -8,6 +8,8 @@ export default function Header() {
         theme,
         menu,
         setMenu,
+        changeLanguage,
+        t
     } = useAppContext();
 
     return (
@@ -25,7 +27,7 @@ export default function Header() {
                                 title="Home"
                                 className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
-                                Home
+                                {t("header.home")}
                             </a>
                         </li>
                         <li>
@@ -35,7 +37,7 @@ export default function Header() {
                                 title="Sobre mim"
                                 className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
-                                Sobre mim
+                                {t("header.about")}
                             </a>
                         </li>
                         <li>
@@ -45,7 +47,7 @@ export default function Header() {
                                 title="Serviços"
                                 className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
-                                Serviços
+                                {t("header.services")}
                             </a>
                         </li>
                         <li>
@@ -55,7 +57,7 @@ export default function Header() {
                                 title="Projetos"
                                 className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
-                                Projetos
+                                {t("header.projects")}
                             </a>
                         </li>
                         <li>
@@ -65,8 +67,14 @@ export default function Header() {
                                 title="Contato"
                                 className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                             >
-                                Contato
+                                {t("header.contact")}
                             </a>
+                        </li>
+                        <li>
+                            <button onClick={() => changeLanguage("pt")}>PT</button>
+                        </li>
+                        <li>
+                            <button onClick={() => changeLanguage("en")}>EN</button>
                         </li>
                         <li>
                             {theme ? (
@@ -125,7 +133,7 @@ export default function Header() {
                                                     title="Home"
                                                     className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
                                                 >
-                                                    Home
+                                                    {t("header.home")}
                                                 </a>
                                             </li>
                                             <li>
@@ -135,7 +143,7 @@ export default function Header() {
                                                     title="Sobre mim"
                                                     className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
                                                 >
-                                                    Sobre mim
+                                                    {t("header.about")}
                                                 </a>
                                             </li>
                                             <li>
@@ -145,7 +153,7 @@ export default function Header() {
                                                     title="Serviços"
                                                     className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
                                                 >
-                                                    Serviços
+                                                    {t("header.services")}
                                                 </a>
                                             </li>
                                             <li>
@@ -155,7 +163,7 @@ export default function Header() {
                                                     title="Projetos"
                                                     className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
                                                 >
-                                                    Projetos
+                                                    {t("header.projects")}
                                                 </a>
                                             </li>
                                             <li>
@@ -165,8 +173,14 @@ export default function Header() {
                                                     title="Contato"
                                                     className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
                                                 >
-                                                    Contato
+                                                    {t("header.contact")}
                                                 </a>
+                                            </li>
+                                            <li>
+                                                <button onClick={() => changeLanguage("pt")}>PT</button>
+                                            </li>
+                                            <li>
+                                                <button onClick={() => changeLanguage("en")}>EN</button>
                                             </li>
                                             <li>
                                                 {theme ? (

@@ -15,7 +15,7 @@ export default function Project({link, image, title, description}) {
                 <form className="mt-4 flex gap-4">
                     <button
                         type="button"
-                        className="block w-full rounded bg-purple-800 px-4 py-3 font-medium text-white"
+                        className="block w-full rounded bg-purple-800 hover:bg-purple-950 transition-colors duration-500 px-4 py-3 font-medium text-white"
                     >
                         Visitar
                     </button>
