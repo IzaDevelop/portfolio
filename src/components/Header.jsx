@@ -62,7 +62,7 @@ export default function Header() {
                         </li>
                         <li>
                             <a
-                                href="mailto:izabelledevelop@gmail.com"
+                                href="mailto:contact.izadeveloper@gmail.com"
                                 aria-label="Contato"
                                 title="Contato"
                                 className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
@@ -168,7 +168,7 @@ export default function Header() {
                                             </li>
                                             <li>
                                                 <a
-                                                    href="mailto:izabelledevelop@gmail.com"
+                                                    href="mailto:contact.izadeveloper@gmail.com"
                                                     aria-label="Contato"
                                                     title="Contato"
                                                     className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"

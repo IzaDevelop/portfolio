@@ -60,8 +60,8 @@ export function AppContextProvider(props) {
 
     // PDF Download
 
-    const PDFen = 'https://izadevelop.vercel.app/cv-izabelle-en.pdf'
-    const PDFpt = 'https://izadevelop.vercel.app/cv-izabelle-pt.pdf'
+    const PDFen = 'https://izadeveloper.vercel.app/cv-izabelle-en.pdf'
+    const PDFpt = 'https://izadeveloper.vercel.app/cv-izabelle-pt.pdf'
 
     const currentLang = localStorage.getItem("i18nextLng") || "pt";
     const PDFFile = currentLang === "pt" ? PDFpt : PDFen;

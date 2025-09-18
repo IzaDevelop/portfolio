@@ -29,12 +29,12 @@ export default function Footer() {
                         <div className="flex">
                             <p className="mr-1 text-base">E-mail:</p>
                             <a
-                                href="mailto:izabelledevelop@gmail.com"
+                                href="mailto:contact.izadeveloper@gmail.com"
                                 aria-label="Email"
                                 title="Email"
                                 className="text-base duration-300 dark:hover:text-purple-400"
                             >
-                                izabelledevelop@gmail.com
+                                contact.izadeveloper@gmail.com
                             </a>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                         </span>
                         <div className="flex items-center mt-1 space-x-3">
                             <a
-                                href="https://github.com/IzaDevelop"
+                                href="https://github.com/IzaDeveloper"
                                 target='_blank'
                                 className="transition-colors duration-300 hover:text-purple-400"
                                 title="Github"
