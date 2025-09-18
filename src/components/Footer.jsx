@@ -27,7 +27,7 @@ export default function Footer() {
                             {t("footer.contact")}
                         </p>
                         <div className="flex">
-                            <p className="mr-1 text-base">E-mail:</p>
+                            {/* <p className="mr-1 text-base">E-mail:</p> */}
                             <a
                                 href="mailto:contact.izadeveloper@gmail.com"
                                 aria-label="Email"
@@ -52,7 +52,7 @@ export default function Footer() {
                                 <GithubLogo size={30} />
                             </a>
                             <a
-                                href="https://www.linkedin.com/in/izabelle-santos-128703224/"
+                                href="www.linkedin.com/in/izabelle-santos-frontend"
                                 target='_blank'
                                 className="transition-colors duration-300 hover:text-purple-400"
                                 title="Linkedin"
