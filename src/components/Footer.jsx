@@ -52,7 +52,7 @@ export default function Footer() {
                                 <GithubLogo size={30} />
                             </a>
                             <a
-                                href="www.linkedin.com/in/izabelle-santos-frontend"
+                                href="https://www.linkedin.com/in/izabelle-santos-frontend"
                                 target='_blank'
                                 className="transition-colors duration-300 hover:text-purple-400"
                                 title="Linkedin"
