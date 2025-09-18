@@ -14,8 +14,8 @@ export default function Header() {
 
     return (
         <header className='w-full bg-purple-300 dark:bg-neutral-950 text-zinc-900 dark:text-zinc-100'>
-            <nav className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-                <div className="relative flex items-center justify-between">
+            <nav className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+                <div className="relative flex items-center justify-between px-5 xl:px-0">
                     <figure className="flex items-center">
                         <img src={Logo} className="h-16 mr-3 dark:invert" alt="Logo" />
                     </figure>
@@ -71,10 +71,10 @@ export default function Header() {
                             </a>
                         </li>
                         <li>
-                            <button onClick={() => changeLanguage("pt")}>PT</button>
+                            <button onClick={() => changeLanguage("pt")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">PT</button>
                         </li>
                         <li>
-                            <button onClick={() => changeLanguage("en")}>EN</button>
+                            <button onClick={() => changeLanguage("en")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">EN</button>
                         </li>
                         <li>
                             {theme ? (
@@ -100,25 +100,25 @@ export default function Header() {
                         <button
                             aria-label="Open Menu"
                             title="Open Menu"
-                            className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+                            className="p-2 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
                             onClick={() => setMenu(true)}
                         >
                             <List size={35} />
                         </button>
                         {menu && (
                             <div className="absolute z-10 top-0 left-0 w-full" onClick={() => setMenu(false)}>
-                                <div className="p-5 bg-purple-300 dark:bg-neutral-950 rounded shadow-lg">
+                                <div className="p-5 pt-0 bg-purple-300 dark:bg-neutral-950 rounded shadow-lg">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <figure className="flex items-center">
-                                                <img src={Logo} className="h-16 mr-3 dark:invert" alt="Logo" />
+                                                <img src={Logo} className="h-16 dark:invert" alt="Logo" />
                                             </figure>
                                         </div>
                                         <div>
                                             <button
                                                 aria-label="Close Menu"
                                                 title="Close Menu"
-                                                className="p-2 -mt-2 -mr-2 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+                                                className="p-2 transition duration-200 rounded focus:outline-none focus:shadow-outline"
                                             >
                                                 <X size={30} />
                                             </button>
@@ -177,10 +177,10 @@ export default function Header() {
                                                 </a>
                                             </li>
                                             <li>
-                                                <button onClick={() => changeLanguage("pt")}>PT</button>
+                                                <button onClick={() => changeLanguage("pt")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">PT</button>
                                             </li>
                                             <li>
-                                                <button onClick={() => changeLanguage("en")}>EN</button>
+                                                <button onClick={() => changeLanguage("en")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">EN</button>
                                             </li>
                                             <li>
                                                 {theme ? (
