@@ -1,6 +1,6 @@
 export default function Project({cta, link, image, title, description}) {
     return (
-        <a href={link} className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md rounded">
+        <a href={link} target="_blank" className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md rounded">
             <img
                 src={image}
                 alt=""
