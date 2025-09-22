@@ -53,6 +53,10 @@ export function AppContextProvider(props) {
         setMenu(windowDimensions.width > 768 ? false : menu);
     }, [windowDimensions]);
 
+    // Current Year
+
+    const currentYear =  new Date().getFullYear();
+
     // ROUTER-DOM
 
     const location = useLocation();
@@ -60,8 +64,8 @@ export function AppContextProvider(props) {
 
     // PDF Download
 
-    const PDFen = 'https://izadeveloper.vercel.app/resume-izabelle-frontend.pdf'
-    const PDFpt = 'https://izadeveloper.vercel.app/cv-izabelle-frontend.pdf'
+    const PDFen = 'https://izadeveloper.vercel.app/pdf/resume-izabelle-frontend.pdf'
+    const PDFpt = 'https://izadeveloper.vercel.app/pdf/cv-izabelle-frontend.pdf'
 
     const currentLang = localStorage.getItem("i18nextLng") || "pt";
     const PDFFile = currentLang === "pt" ? PDFpt : PDFen;
@@ -95,6 +99,8 @@ export function AppContextProvider(props) {
                 menu,
                 setMenu,
 
+                currentYear,
+
                 location,
                 navigate,
 
@@ -104,7 +110,8 @@ export function AppContextProvider(props) {
                 PDFFile,
 
                 changeLanguage,
-                t
+                t,
+                currentLang
             }}
         >
             {props.children}

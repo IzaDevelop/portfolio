@@ -4,7 +4,8 @@ import { useAppContext } from "../context/appContext";
 
 export default function Footer() {
     const {
-        t
+        t,
+        currentYear
     } = useAppContext();
 
     return (
@@ -27,7 +28,6 @@ export default function Footer() {
                             {t("footer.contact")}
                         </p>
                         <div className="flex">
-                            {/* <p className="mr-1 text-base">E-mail:</p> */}
                             <a
                                 href="mailto:contact.izadeveloper@gmail.com"
                                 aria-label="Email"
@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <span className="text-base font-bold tracking-wide">
-                             {t("footer.social")}
+                            {t("footer.social")}
                         </span>
                         <div className="flex items-center mt-1 space-x-3">
                             <a
@@ -71,10 +71,10 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex justify-center pt-5 pb-10 border-t">
-                    <p className="text-sm" dangerouslySetInnerHTML={{ __html: t("footer.copyright") }}>
-                    </p>
-                </div>
+                    <p className="text-sm" dangerouslySetInnerHTML={{ __html: t("footer.copyright", {currentYear}) }}>
+                </p>
             </div>
-        </footer>
+        </div>
+        </footer >
     );
 };

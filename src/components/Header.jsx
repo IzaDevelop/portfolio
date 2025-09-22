@@ -9,7 +9,8 @@ export default function Header() {
         menu,
         setMenu,
         changeLanguage,
-        t
+        t,
+        currentLang
     } = useAppContext();
 
     return (
@@ -70,11 +71,19 @@ export default function Header() {
                                 {t("header.contact")}
                             </a>
                         </li>
-                        <li>
-                            <button onClick={() => changeLanguage("pt")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">PT</button>
-                        </li>
-                        <li>
-                            <button onClick={() => changeLanguage("en")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">EN</button>
+                        <li className='flex justify-between items-center'>
+                            <span
+                                onClick={() => changeLanguage("pt")}
+                                className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 px-3 py-1 ${currentLang === "pt" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950" : ""}`}
+                            >
+                                PT
+                            </span>
+                            <span
+                                onClick={() => changeLanguage("en")}
+                                className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 px-3 py-1 ${currentLang === "en" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950" : ""}`}
+                            >
+                                EN
+                            </span>
                         </li>
                         <li>
                             {theme ? (
@@ -176,11 +185,20 @@ export default function Header() {
                                                     {t("header.contact")}
                                                 </a>
                                             </li>
-                                            <li>
-                                                <button onClick={() => changeLanguage("pt")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">PT</button>
-                                            </li>
-                                            <li>
-                                                <button onClick={() => changeLanguage("en")} className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300">EN</button>
+                                            <li className='flex gap-3 items-center'>
+                                                <span
+                                                    onClick={() => changeLanguage("pt")}
+                                                    className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 ${currentLang === "pt" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950 px-3 py-1 " : ""}`}
+                                                >
+                                                    PT
+                                                </span>
+                                                <span>/</span>
+                                                <span
+                                                    onClick={() => changeLanguage("en")}
+                                                    className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 ${currentLang === "en" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950 px-3 py-1 " : ""}`}
+                                                >
+                                                    EN
+                                                </span>
                                             </li>
                                             <li>
                                                 {theme ? (
@@ -209,6 +227,6 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
-        </header>
+        </header >
     )
 }

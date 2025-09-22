@@ -12,7 +12,7 @@
       "subtitle": "Within these virtual walls, I invite you to explore my creativity, dedication, and technical knowledge in the world of web development."
     },
     "about": {
-      "title": "Who I Am",
+      "title": "About me",
       "text": "Hi! My name is Izabelle, and I'm a Mid‑Level Front‑End Developer with over 3 years of experience building responsive, accessible, and scalable interfaces. I always strive to create reusable components and deliver solutions that enhance the user experience. <br/><br/> If you're looking for a dedicated developer who is passionate about technology, I would love to chat about how I can contribute to the success of your project or company. Let’s build something amazing together!",
       "skills": [
         "React.js",
@@ -172,27 +172,31 @@
       "title": "Projects",
       "items": [
         {
-          "title": "Dream Agency",
-          "image": "./images/dream-agency.png",
-          "description": "Modern landing page for a fictional digital services agency, showcasing plans and solutions with a responsive design and a focus on conversion.",
-          "link": "https://dream-agency-beta.vercel.app"
+          "title": "E-commerce",
+          "image": "./images/ecommerce.png",
+          "description": "An e-commerce application built with Angular, TypeScript, and Sass. It features a shopping cart, product catalog, discount support, and a RESTful API using json-server and supports multiple languages (PT/EN).",
+          "cta": "Go to website",
+          "link": "https://e-commerce-buy-things.vercel.app"
         },
         {
-          "title": "Next Journey",
-          "image": "./images/proxima-jornada.png",
-          "description": "Hotsite for a fictional promotional campaign, where users can register and compete for an all-inclusive trip to a tropical paradise.",
-          "link": "https://proxima-jornada-beta.vercel.app"
+          "title": "Planner",
+          "image": "./images/weekly-planned.png",
+          "description": "A weekly planner built with React, Zustand, and TailwindCSS. It allows you to create, edit, delete, and organize tasks. It supports multiple languages (PT/EN), dark/light themes, and data persistence using localStorage.",
+          "cta": "Go to website",
+          "link": "https://weekly-planned.vercel.app"
         },
         {
           "title": "Minefield Game",
           "image": "./images/minefields.png",
           "description": "Digital version of the classic Minesweeper, developed to challenge logic and strategy, with a clean interface and dynamic gameplay.",
+          "cta": "Go to website",
           "link": "https://game-minefields.vercel.app"
         },
         {
           "title": "Memory Game",
           "image": "./images/memory-game.png",
           "description": "Pokémon-inspired memory game that stimulates focus and agility, featuring an engaging design and easy-to-play mechanics.",
+          "cta": "Go to website",
           "link": "https://memory-pokemon.vercel.app"
         }
       ]
@@ -202,6 +206,6 @@
     "text": "Developer, building the front‑end of websites <br class='hidden lg:block' /> and Web applications.",
     "contact": "Contact",
     "social": "Social",
-    "copyright": "Copyright © 2023 <a href='https://izadeveloper.vercel.app' class='font-semibold transition-colors duration-300 hover:text-purple-400'>Iza Developer</a>. All rights reserved."
+    "copyright": "Copyright © {{currentYear}} <a href='https://izadeveloper.vercel.app' class='font-semibold transition-colors duration-300 hover:text-purple-400'>Iza Developer</a>. All rights reserved."
   }
 }

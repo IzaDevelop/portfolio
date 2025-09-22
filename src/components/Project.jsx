@@ -1,10 +1,10 @@
-export default function Project({link, image, title, description}) {
+export default function Project({cta, link, image, title, description}) {
     return (
         <a href={link} className="group relative block overflow-hidden lg:col-span-2 dark:border-none border-2 shadow-md rounded">
             <img
                 src={image}
                 alt=""
-                className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                className="h-52 w-full object-cover object-top transition duration-500 group-hover:scale-105 sm:h-72"
             />
 
             <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
@@ -17,7 +17,7 @@ export default function Project({link, image, title, description}) {
                         type="button"
                         className="block w-full rounded bg-purple-800 hover:bg-purple-950 transition-colors duration-500 px-4 py-3 font-medium text-white"
                     >
-                        Visitar
+                       {cta}
                     </button>
                 </form>
             </div>

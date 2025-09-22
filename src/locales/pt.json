@@ -12,7 +12,7 @@
             "subtitle": "Dentro dessas paredes virtuais, convido você a explorar minha criatividade, dedicação e conhecimento técnico no mundo do desenvolvimento web."
         },
         "about": {
-            "title": "Quem sou",
+            "title": "Sobre mim",
             "text": "Olá! Meu nome é Izabelle, sou Desenvolvedora Front-end Pleno com mais de 3 anos de experiência construindo interfaces responsivas, acessíveis e escaláveis, sempre buscando criar componentes reutilizáveis e entregar soluções que melhorem a experiência do usuário. <br> <br> Se você procura uma desenvolvedora dedicada e apaixonada por tecnologia, adoraria conversar sobre como posso contribuir para o sucesso do seu projeto ou empresa. Vamos construir algo incrível juntos!",
             "skills": [
                 "React.js",
@@ -76,22 +76,22 @@
                         {
                             "title": "Qualificação profissional em Domain Driven Design (Java), Cloud Computing",
                             "link": "https://www.fiap.com.br",
-                            "institution": "@Fiap"                            
+                            "institution": "@Fiap"
                         },
                         {
                             "title": "Qualificação profissional em Responsive Web - Front End e User Experience",
                             "link": "https://www.fiap.com.br",
-                            "institution": "@Fiap"                            
+                            "institution": "@Fiap"
                         },
                         {
                             "title": "Introdução ao Linux",
                             "link": "https://app.santanderopenacademy.com",
-                            "institution": "@Santander"                            
+                            "institution": "@Santander"
                         },
                         {
                             "title": "Versionamento de Código com Git e GitHub",
                             "link": "https://www.dio.me/",
-                            "institution": "@Dio"                            
+                            "institution": "@Dio"
                         }
                     ]
                 },
@@ -172,26 +172,30 @@
             "title": "Projetos",
             "items": [
                 {
-                    "title": "Dream Agency",
-                    "image": "./images/dream-agency.png",
-                    "description": "Landing page moderna para uma agência fictícia de serviços digitais, destacando planos e soluções com design responsivo e foco em conversão.",
-                    "link": "https://dream-agency-beta.vercel.app"
+                    "title": "E-commerce",
+                    "image": "./images/ecommerce.png",
+                    "description": "Um e-commerce desenvolvido com Angular, TypeScript e Sass. Conta com listagem de produtos, carrinho de compras, suporte a descontos e API REST simulada com json-server e suporte a múltiplos idiomas (PT/EN).",
+                    "cta": "Visitar",
+                    "link": "https://e-commerce-buy-things.vercel.app"
                 },
                 {
-                    "title": "Próxima Jornada",
-                    "image": "./images/proxima-jornada.png",
-                    "description": "Hotsite para uma campanha promocional fictícia, onde usuários podem se ver informações e concorrer a uma viagem paradisíaca com tudo incluso.",
-                    "link": "https://proxima-jornada-beta.vercel.app"
+                    "title": "Planner",
+                    "image": "./images/weekly-planned.png",
+                    "description": "Um planner semanal feito com React, Zustand e TailwindCSS. Permite a criação, edição, exclusão e organização de tarefas. Possui suporte a múltiplos idiomas (PT/EN), tema escuro/claro e persistência de dados no localStorage.",
+                    "cta": "Visitar",
+                    "link": "https://weekly-planned.vercel.app"
                 },
                 {
                     "title": "Campo Minado",
                     "image": "./images/minefields.png",
                     "description": "Versão digital do clássico Campo Minado, desenvolvida para desafiar lógica e estratégia, com interface simples e jogabilidade dinâmica.",
+                    "cta": "Visitar",
                     "link": "https://game-minefields.vercel.app"
                 },
                 {
                     "title": "Jogo da Memória",
                     "image": "./images/memory-game.png",
+                    "cta": "Visitar",
                     "description": "Jogo da memória inspirado em Pokémon, que estimula concentração e agilidade, com design atrativo e mecânica de fácil interação.",
                     "link": "https://memory-pokemon.vercel.app"
                 }
@@ -202,6 +206,6 @@
         "text": "Desenvolvedora, construindo o Front-end de sites  <br class='hidden lg:block' />  e aplicativos Web.",
         "contact": "Contato",
         "social": "Social",
-        "copyright": "Copyright © 2023 <a href='https://izadeveloper.vercel.app' class='font-semibold transition-colors duration-300 hover:text-purple-400'>Iza Developer</a>. Todos os direitos reservados."
+        "copyright": "Copyright © {{currentYear}} <a href='https://izadeveloper.vercel.app' class='font-semibold transition-colors duration-300 hover:text-purple-400'>Iza Developer</a>. Todos os direitos reservados."
     }
 }

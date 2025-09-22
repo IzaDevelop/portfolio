@@ -177,6 +177,7 @@ export default function Home() {
                             {t("home.projects.items", { returnObjects: true }).map((project, index) => (
                                 <Project
                                     key={index}
+                                    cta={project.cta}
                                     link={project.link}
                                     image={project.image}
                                     title={project.title}
