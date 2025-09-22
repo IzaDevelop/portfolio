@@ -71,16 +71,17 @@ export default function Header() {
                                 {t("header.contact")}
                             </a>
                         </li>
-                        <li className='flex justify-between items-center'>
+                        <li className='flex gap-3 justify-between items-center'>
                             <span
                                 onClick={() => changeLanguage("pt")}
-                                className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 px-3 py-1 ${currentLang === "pt" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950" : ""}`}
+                                className={`font-medium tracking-wide px-3 py-1 ${currentLang === "pt" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950" : "hover:text-purple-500 dark:hover:text-purple-300"}`}
                             >
                                 PT
                             </span>
+                            <span>/</span>
                             <span
                                 onClick={() => changeLanguage("en")}
-                                className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 px-3 py-1 ${currentLang === "en" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950" : ""}`}
+                                className={`font-medium tracking-wide px-3 py-1 ${currentLang === "en" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950" : "hover:text-purple-500 dark:hover:text-purple-300"}`}
                             >
                                 EN
                             </span>
@@ -188,14 +189,14 @@ export default function Header() {
                                             <li className='flex gap-3 items-center'>
                                                 <span
                                                     onClick={() => changeLanguage("pt")}
-                                                    className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 ${currentLang === "pt" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950 px-3 py-1 " : ""}`}
+                                                    className={`font-medium tracking-wide cursor-pointer ${currentLang === "pt" ? "bg-purple-500 text-white rounded-full px-3 py-1 " : ""}`}
                                                 >
                                                     PT
                                                 </span>
                                                 <span>/</span>
                                                 <span
                                                     onClick={() => changeLanguage("en")}
-                                                    className={`font-medium tracking-wide hover:text-purple-500 dark:hover:text-purple-300 ${currentLang === "en" ? "bg-purple-500 text-white rounded-full hover:text-black dark:hover:text-purple-950 px-3 py-1 " : ""}`}
+                                                    className={`font-medium tracking-wide cursor-pointer${currentLang === "en" ? "bg-purple-500 text-white rounded-full px-3 py-1 " : ""}`}
                                                 >
                                                     EN
                                                 </span>
