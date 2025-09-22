@@ -8,7 +8,7 @@
 
 ### 👋 Welcome
 
-This is the repository for my **personal portfolio**, built with performance, responsiveness, and front-end best practices in mind.
+This is the repository for my **personal portfolio**, built with performance, responsive, and front-end best practices in mind.
 
 Here you'll find information about me, my main projects, technologies I use, experience, and ways to contact me.
 
