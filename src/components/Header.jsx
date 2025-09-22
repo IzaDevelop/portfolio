@@ -141,7 +141,7 @@ export default function Header() {
                                                     href="#home"
                                                     aria-label="Home"
                                                     title="Home"
-                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300 block w-full"
                                                 >
                                                     {t("header.home")}
                                                 </a>
@@ -151,7 +151,7 @@ export default function Header() {
                                                     href="#sobre"
                                                     aria-label="Sobre mim"
                                                     title="Sobre mim"
-                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300 block w-full"
                                                 >
                                                     {t("header.about")}
                                                 </a>
@@ -161,7 +161,7 @@ export default function Header() {
                                                     href="#servicos"
                                                     aria-label="Serviços"
                                                     title="Serviços"
-                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300"
+                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-700 dark:hover:text-purple-300 block w-full"
                                                 >
                                                     {t("header.services")}
                                                 </a>
@@ -171,7 +171,7 @@ export default function Header() {
                                                     href="#projetos"
                                                     aria-label="Projetos"
                                                     title="Projetos"
-                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300 block w-full"
                                                 >
                                                     {t("header.projects")}
                                                 </a>
@@ -181,22 +181,21 @@ export default function Header() {
                                                     href="mailto:contact.izadeveloper@gmail.com"
                                                     aria-label="Contato"
                                                     title="Contato"
-                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300"
+                                                    className="font-medium tracking-wide transition-colors duration-200 hover:text-purple-500 dark:hover:text-purple-300 block w-full"
                                                 >
                                                     {t("header.contact")}
                                                 </a>
                                             </li>
-                                            <li className='flex gap-3 items-center'>
+                                            <li className='flex gap-3 flex-col items-center'>
                                                 <span
                                                     onClick={() => changeLanguage("pt")}
-                                                    className={`font-medium tracking-wide cursor-pointer ${currentLang === "pt" ? "bg-purple-500 text-white rounded-full px-3 py-1 " : ""}`}
+                                                    className={`font-medium tracking-wide cursor-pointer w-full ${currentLang === "pt" ? "bg-purple-500 text-white px-3 py-1 " : ""}`}
                                                 >
                                                     PT
                                                 </span>
-                                                <span>/</span>
                                                 <span
                                                     onClick={() => changeLanguage("en")}
-                                                    className={`font-medium tracking-wide cursor-pointer${currentLang === "en" ? "bg-purple-500 text-white rounded-full px-3 py-1 " : ""}`}
+                                                    className={`font-medium tracking-wide cursor-pointer w-full ${currentLang === "en" ? "bg-purple-500 text-white px-3 py-1 " : ""}`}
                                                 >
                                                     EN
                                                 </span>
@@ -206,7 +205,7 @@ export default function Header() {
                                                     <button
                                                         type="button"
                                                         onClick={handleToggleTheme}
-                                                        className="py-2 rounded focus:border-0 dark:hover:text-purple-300"
+                                                        className="py-2 rounded focus:border-0 dark:hover:text-purple-300 w-full"
                                                     >
                                                         <Sun size={23} weight="light" />
                                                     </button>
@@ -214,7 +213,7 @@ export default function Header() {
                                                     <button
                                                         type="button"
                                                         onClick={handleToggleTheme}
-                                                        className="py-2 rounded focus:border-0 hover:text-purple-500"
+                                                        className="py-2 rounded focus:border-0 hover:text-purple-500 w-full"
                                                     >
                                                         <Moon size={23} weight="light" />
                                                     </button>
