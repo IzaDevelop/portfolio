@@ -4,7 +4,7 @@ export default function Project({cta, link, image, title, description}) {
             <img
                 src={image}
                 alt=""
-                className="h-52 w-full object-cover object-top transition duration-500 group-hover:scale-105 sm:h-72"
+                className="h-52 w-full object-cover object-top transition duration-500 group-hover:scale-105 sm:h-76"
             />
 
             <div className="relative bg-purple-50 dark:bg-neutral-950 p-6">
